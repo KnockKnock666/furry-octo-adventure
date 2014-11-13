@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{isodate}
+\usepackage{fullpage}
+\usepackage{tabularx}
+\usepackage{capt-of}
+\usepackage{amsmath}
+\title{CS102 \LaTeX\spaceÜbung}
+\author{Sein Coray}
+\begin{document}
+\maketitle
+\section{Erster Abschnitt}
+Hier könnte ganz viel Text stehen, aber niemand hat Lust so viel Unnötiges zu lesen.
+\section{Tabelle}
+In der Tabelle finden Sie ganz viel.
+\begin{center}
+		\begin{tabularx}{0.8\linewidth}{X|X|X|X}
+			& Punkte erhalten & Punkte möglich & \% \\
+			\hline
+			Aufgabe 1 & 2 & 4 & 50 \\
+			Aufgabe 2 & 1.5 & 3 & 50 \\
+			Aufgabe 3 & 3 & 3 & 100
+		\end{tabularx}
+		\captionof{table}{Der Student war nicht so fleissig.}
+	\end{center}
+\section{Formeln}
+\subsection{Pythagoras}
+	Der Satz des Pythagoras errechnet sich wie folgt: $a^{2} + b^{2} = c^{2}$. Daraus können
+	wir die Länge der Hypothenuse wie folgt berechnen: $c = \sqrt{a^{2} + b^{2}}$.
+
+\subsection{Summen}
+	Wir können auch die Formel für eine Summe angeben:
+	\begin{align}
+		s &= \sum_{i=1}^{n}i = \frac{n \cdot (n + 1)}{2}
+	\end{align}
+\end{document}
